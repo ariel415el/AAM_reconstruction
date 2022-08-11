@@ -1,5 +1,5 @@
 
-# Reconstructions with Active Appearance model
+# Face Reconstructions with Active Appearance model
 Given images with landmarks (keypoints) all images are warped (patch size) into the mean keypoint shape
 and a PCA is learned over centered (warped) images.
 
