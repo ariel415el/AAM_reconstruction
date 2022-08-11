@@ -12,9 +12,14 @@ Exctract the Obama dataset by
 
 ```
 $ unzip data/100-shot-obama_128/img.zip -d data/100-shot-obama_128/ 
+```
+
+Create centered data, learn KPS and Image PCA models and reconstruct test data with 
+
+```
 $ python3 main.py
 ```
 
 
-![asd](Readme_images/recon-1.png =250x)
-![asd](Readme_images/recon-6.png =250x)
+<img src="Readme_images/recon-1.png" width="400"> | <img src="Readme_images/recon-6.png" width="400">
+
