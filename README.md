@@ -17,7 +17,19 @@ $ python3 main.py
 ## Expected results
 ### Samples
 
+Samples | Randomly morphed samples
+--- | --- 
 <img src="Readme_images/samples.png" width="400"> | <img src="Readme_images/samples_morphed.png" width="400">
+
+Test images | Centered test faces 
+--- | --- 
+<img src="Readme_images/test_faces.png" width="400"> | <img src="Readme_images/test_faces_centered.png" width="400"> | 
+
+Model reconstructions | Retargeted reconstructions 
+--- | --- 
+<img src="Readme_images/test_faces_full_reconstructions.png" width="400"> | <img src="Readme_images/test_faces_reconstructions.png" width="400"> | 
+
+| Model reconstructions
 
 # TODOS
 - [ ] Use TPS (Thin plate splines) for warping instead of triangle-mesh non-continous warping
