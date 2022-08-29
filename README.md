@@ -8,25 +8,23 @@ and then warping again to the original shape
 
 # Run
 
-Exctract the Obama dataset by
-
-```
-$ unzip data/100-shot-obama_128/img.zip -d data/100-shot-obama_128/ 
-```
-
 Create centered data, learn KPS and Image PCA models and reconstruct test data with 
 
 ```
 $ python3 main.py
 ```
 
+## Expected results
+### Samples
 
-<img src="Readme_images/recon-1.png" width="400"> | <img src="Readme_images/recon-6.png" width="400">
+<img src="Readme_images/samples.png" width="400"> | <img src="Readme_images/samples_morphed.png" width="400">
 
+# TODOS
+- [ ] Use TPS (Thin plate splines) for warping instead of triangle-mesh non-continous warping
 
 # Credits
-The Warping code is a simplified version of https://github.com/VipulRamtekkar/Active-Appearance-Models/tree/master/References
-Whos work is very much appriciated
+- The Warping code is a simplified version of: [Active-Appearance-Models](https://github.com/VipulRamtekkar/Active-Appearance-Models/tree/master/References)
+- Whos work is very much appriciated MMPCA code is from [torch-mfa](https://github.com/eitanrich/torch-mfa):
 
 # Cites
 ```
@@ -39,6 +37,14 @@ Whos work is very much appriciated
   pages={681--685},
   year={2001},
   publisher={IEEE}
+}
+
+@inproceedings{richardson2018gans,
+  title={On gans and gmms},
+  author={Richardson, Eitan and Weiss, Yair},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={5847--5858},
+  year={2018}
 }
 ```
 

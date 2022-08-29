@@ -33,7 +33,6 @@ def PiecewiseAffineTransform(src_img, src_pts, dst_pts):
     xmin, ymin = dst_pts.min(0).astype(int)
     xmax, ymax = np.ceil(dst_pts.max(0)).astype(int)
 
-
     # Find affine mapping from input positions to mean shape
     affine_transforms = []
     for i, tri in enumerate(tess.vertices):
